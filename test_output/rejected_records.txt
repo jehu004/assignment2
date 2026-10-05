@@ -1,0 +1,19 @@
+Rejected rows (source file, row number, field, reason)
+================================================================
+fitness_sessions.csv row 26 [signal_quality]: signal quality 0.34 is below the limit 0.6
+fitness_sessions.csv row 27 [signal_quality]: signal quality 0.29 is below the limit 0.6
+fitness_sessions.csv row 28 [signal_quality]: signal quality 0.25 is below the limit 0.6
+fitness_sessions.csv row 29 [signal_quality]: signal quality 0.31 is below the limit 0.6
+fitness_sessions.csv row 30 [signal_quality]: signal quality 0.28 is below the limit 0.6
+fitness_sessions_invalid.csv row 3 [heart_rate]: heart_rate 'fast' is not a whole number
+fitness_sessions_invalid.csv row 4 [participant_id]: participant_id '001' is not P followed by three digits
+fitness_sessions_invalid.csv row 5 [activity_level]: activity_level is missing
+fitness_sessions_invalid.csv row 6 [signal_quality]: signal_quality 1.4 is outside the possible range 0-1
+fitness_sessions_invalid.csv row 7 [session_id]: session_id 'FIT-26-102' is not written as FIT-YYYY-NNN
+fitness_sessions_invalid.csv row 8 [participant_id]: participant P999 is not in the profile file
+fitness_sessions_invalid.csv row 9 [timestamp]: timestamp 'two' is not a whole number
+fitness_sessions_invalid.csv row 10 [heart_rate]: heart_rate -15 is outside the possible range 35-205
+fitness_sessions_invalid.csv row 11 [skin_response]: skin_response -0.5 is outside the possible range 0-20
+fitness_sessions_invalid.csv row 12 [row]: the row has fewer columns than the header
+
+15 rows rejected in total.

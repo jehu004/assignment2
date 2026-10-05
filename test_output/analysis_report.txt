@@ -1,0 +1,152 @@
+Smart Fitness Session Analyzer - session reports
+
+================================================================
+ Session FIT-2026-001
+================================================================
+Participant P001 (Amina Noor) - baseline HR 68 bpm, skin 1.2, temp 32.4 C
+Rows: 6 total, 6 usable, 0 rejected
+
+Summary of usable rows:
+  heart_rate      avg 68.83 bpm   min 68 bpm      max 70 bpm
+  skin_response   avg 1.19        min 1.17        max 1.22
+  temperature     avg 32.43 C     min 32.4 C      max 32.5 C
+  activity_level  avg 0.09        min 0.07        max 0.12
+
+Compared with personal baseline:
+  heart rate     +0.8 bpm
+  skin response  -0.01
+  temperature    +0.03 C
+  recovery check: HR drop 0.0 bpm, activity drop 0.0
+
+CLASSIFICATION: RESTING
+Reason: Heart rate stayed close to baseline (0.8 bpm, under 15) and average activity was low (0.09, under 0.3).
+
+================================================================
+ Session FIT-2026-002
+================================================================
+Participant P002 (Jonas Berg) - baseline HR 74 bpm, skin 1.45, temp 32.7 C
+Rows: 6 total, 6 usable, 0 rejected
+
+Summary of usable rows:
+  heart_rate      avg 102.0 bpm   min 78 bpm      max 118 bpm
+  skin_response   avg 2.01        min 1.55        max 2.4
+  temperature     avg 33.13 C     min 32.8 C      max 33.4 C
+  activity_level  avg 0.5         min 0.22        max 0.68
+
+Compared with personal baseline:
+  heart rate     +28.0 bpm
+  skin response  +0.56
+  temperature    +0.43 C
+  recovery check: HR drop -17.0 bpm, activity drop -0.16
+
+CLASSIFICATION: MODERATE ACTIVITY
+Reason: Heart rate was 28.0 bpm above baseline (15 or more) and average activity was 0.5 (0.3 or more), but not high enough for high activity.
+
+================================================================
+ Session FIT-2026-003
+================================================================
+Participant P003 (Maya Chen) - baseline HR 63 bpm, skin 1.1, temp 32.3 C
+Rows: 6 total, 6 usable, 0 rejected
+
+Summary of usable rows:
+  heart_rate      avg 132.5 bpm   min 72 bpm      max 162 bpm
+  skin_response   avg 3.24        min 1.3         max 4.2
+  temperature     avg 33.53 C     min 32.5 C      max 34.1 C
+  activity_level  avg 0.75        min 0.25        max 0.94
+
+Compared with personal baseline:
+  heart rate     +69.5 bpm
+  skin response  +2.14
+  temperature    +1.23 C
+  recovery check: HR drop -58.5 bpm, activity drop -0.42
+
+CLASSIFICATION: HIGH ACTIVITY
+Reason: Heart rate was 69.5 bpm above baseline (40 or more) and average activity was 0.75 (0.6 or more).
+
+================================================================
+ Session FIT-2026-004
+================================================================
+Participant P001 (Amina Noor) - baseline HR 68 bpm, skin 1.2, temp 32.4 C
+Rows: 6 total, 6 usable, 0 rejected
+
+Summary of usable rows:
+  heart_rate      avg 113.17 bpm  min 72 bpm      max 151 bpm
+  skin_response   avg 2.58        min 1.35        max 3.9
+  temperature     avg 33.28 C     min 32.6 C      max 33.9 C
+  activity_level  avg 0.55        min 0.18        max 0.92
+
+Compared with personal baseline:
+  heart rate     +45.2 bpm
+  skin response  +1.38
+  temperature    +0.88 C
+  recovery check: HR drop 12.0 bpm, activity drop 0.23
+
+CLASSIFICATION: MODERATE ACTIVITY
+Reason: Heart rate was 45.2 bpm above baseline (15 or more) and average activity was 0.55 (0.3 or more), but not high enough for high activity.
+
+================================================================
+ Session FIT-2026-005
+================================================================
+Participant P002 (Jonas Berg) - baseline HR 74 bpm, skin 1.45, temp 32.7 C
+Rows: 5 total, 0 usable, 5 rejected
+  - fitness_sessions.csv row 26 [signal_quality]: signal quality 0.34 is below the limit 0.6
+  - fitness_sessions.csv row 27 [signal_quality]: signal quality 0.29 is below the limit 0.6
+  - fitness_sessions.csv row 28 [signal_quality]: signal quality 0.25 is below the limit 0.6
+  - fitness_sessions.csv row 29 [signal_quality]: signal quality 0.31 is below the limit 0.6
+  - fitness_sessions.csv row 30 [signal_quality]: signal quality 0.28 is below the limit 0.6
+
+Summary of usable rows:
+  heart_rate      avg n/a         min n/a         max n/a
+  skin_response   avg n/a         min n/a         max n/a
+  temperature     avg n/a         min n/a         max n/a
+  activity_level  avg n/a         min n/a         max n/a
+
+CLASSIFICATION: INSUFFICIENT DATA
+Reason: Only 0 of 5 rows were usable (at least 4 are needed).
+
+================================================================
+ Session FIT-2026-101
+================================================================
+Participant P001 (Amina Noor) - baseline HR 68 bpm, skin 1.2, temp 32.4 C
+Rows: 4 total, 1 usable, 3 rejected
+  - fitness_sessions_invalid.csv row 3 [heart_rate]: heart_rate 'fast' is not a whole number
+  - fitness_sessions_invalid.csv row 5 [activity_level]: activity_level is missing
+  - fitness_sessions_invalid.csv row 6 [signal_quality]: signal_quality 1.4 is outside the possible range 0-1
+
+Summary of usable rows:
+  heart_rate      avg 72.0 bpm    min 72 bpm      max 72 bpm
+  skin_response   avg 1.3         min 1.3         max 1.3
+  temperature     avg 32.5 C      min 32.5 C      max 32.5 C
+  activity_level  avg 0.1         min 0.1         max 0.1
+
+CLASSIFICATION: INSUFFICIENT DATA
+Reason: Only 1 of 4 rows were usable (at least 4 are needed).
+
+================================================================
+ Session FIT-2026-102
+================================================================
+Participant P002 (Jonas Berg) - baseline HR 74 bpm, skin 1.45, temp 32.7 C
+Rows: 3 total, 0 usable, 3 rejected
+  - fitness_sessions_invalid.csv row 9 [timestamp]: timestamp 'two' is not a whole number
+  - fitness_sessions_invalid.csv row 10 [heart_rate]: heart_rate -15 is outside the possible range 35-205
+  - fitness_sessions_invalid.csv row 11 [skin_response]: skin_response -0.5 is outside the possible range 0-20
+
+Summary of usable rows:
+  heart_rate      avg n/a         min n/a         max n/a
+  skin_response   avg n/a         min n/a         max n/a
+  temperature     avg n/a         min n/a         max n/a
+  activity_level  avg n/a         min n/a         max n/a
+
+CLASSIFICATION: INSUFFICIENT DATA
+Reason: Only 0 of 3 rows were usable (at least 4 are needed).
+
+================================================================
+ Overview
+================================================================
+  FIT-2026-001     -> resting
+  FIT-2026-002     -> moderate activity
+  FIT-2026-003     -> high activity
+  FIT-2026-004     -> moderate activity
+  FIT-2026-005     -> insufficient data
+  FIT-2026-101     -> insufficient data
+  FIT-2026-102     -> insufficient data
